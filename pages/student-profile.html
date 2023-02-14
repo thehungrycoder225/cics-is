@@ -30,30 +30,92 @@
       <!-- Widgets -->
       <div class="row">
         <h3 class="fw-bold my-3">Enrollment Trend</h3>
-        <div class="col-xl-8">
+        <div class="coL">
           <div class="card p-3">
             <h5 class="mb-3 fw-bold text-dark">Enrollment by Academic Year</h5>
-            <canvas
-              id="trendChart"
-              style="width: 100%; max-width: 700px"
-            ></canvas>
+            <canvas id="trendChart" style="width: 100%"></canvas>
             <p class="fw-bold text-center">Academic Year</p>
           </div>
         </div>
-        <div class="col-xl-4">
-          <div class="card p-3">
-            <h5 class="mb-3 fw-bold">Enrollment by Semester</h5>
-            <canvas
-              id="semesterChart"
-              style="width: 100%; max-width: 700px"
-            ></canvas>
-            <p class="fw-bold text-center">Enrollment Rate</p>
+
+        <div class="row mt-3">
+          <div class="col-xl-8">
+            <div class="card p-3">
+              <h5 class="mb-3 fw-bold">Enrollment by Semester</h5>
+              <canvas
+                id="semChart"
+                style="width: 100%; max-width: 700px"
+              ></canvas>
+              <p class="fw-bold text-center">Enrollment Rate</p>
+            </div>
           </div>
+          <div class="col-xl-4">
+            <table class="table table-sm text-center">
+              <thead>
+                <tr>
+                  <th scope="col fs-6">#</th>
+                  <th scope="col fs-6">Academic Year</th>
+                  <th scope="col fs-6">Information Technology</th>
+                  <th scope="col fs-6">Information Systems</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>2015-2016</td>
+                  <td>1279 </td>
+                  <td>1769 </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>2016-2017</td>
+                  <td>1211</td>
+                  <td>1562</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>2017-2018</td>
+                  <td>1067</td>
+                  <td>1299</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>2018-2019</td>
+                  <td>1073</td>
+                  <td>1299</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>2019-2020</td>
+                  <td>1093</td>
+                  <td>1339</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>2020-2021</td>
+                  <td>1168</td>
+                  <td>1438</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>2021-2022</td>
+                  <td>1346</td>
+                  <td>1621</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>2022-2023</td>
+                  <td>1535</td>
+                  <td>1885</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <a href="../index.html" class="text-coral fw-bold btn btn-sm btn-link"
+            >Go Back</a
+          >
         </div>
       </div>
-      <a href="../index.html" class="text-coral fw-bold btn btn-sm btn-link"
-        >Go Back</a
-      >
     </div>
   </body>
   <script
@@ -62,57 +124,5 @@
     crossorigin="anonymous"
   ></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-  <script>
-    const trendChart = () => {
-      var xLabel = [
-        ' 2015-2016',
-        ' 2016-2017',
-        ' 2017-2018',
-        ' 2018-2019',
-        ' 2019-2020',
-        ' 2020-2021',
-        ' 2021-2022',
-        ' 2022-2023',
-      ];
-
-      new Chart('trendChart', {
-        type: 'line',
-        data: {
-          labels: xLabel,
-          datasets: [
-            {
-              data: [1279, 1211, 1067, 1073, 1093, 1168, 1346, 1535],
-              label: 'BS Information Technology',
-              borderColor: '#1BA605',
-              fill: false,
-            },
-            {
-              data: [490, 351, 232, 226, 246, 270, 275, 350],
-              label: 'BS Information Systems',
-              borderColor: '#FBAA30',
-              fill: false,
-            },
-            {
-              data: [1769, 1562, 1299, 1299, 1339, 1438, 1621, 1885],
-              label: 'Total',
-              borderColor: '#5B0000',
-              fill: false,
-            },
-          ],
-        },
-        options: {
-          legend: { display: false },
-          scales: {
-            y: {
-              beginAtZero: true,
-            },
-          },
-        },
-      });
-    };
-    const barChart = () => {};
-    trendChart();
-    barChart();
-  </script>
+  <script src="student.js"></script>
 </html>
