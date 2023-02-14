@@ -22,30 +22,27 @@
   <body>
     <div class="container">
       <div class="pt-3">
-        <h1>Student Profile</h1>
-        <h4 class="text-green fw-bold"
+        <h1 class="fw-bold">Student Profile</h1>
+        <h4 class="text-green fw-bold fs-6"
           >College of Information and Computing Sciences</h4
         >
       </div>
       <!-- Widgets -->
       <div class="row">
         <h3 class="fw-bold my-3">Enrollment Trend</h3>
-        <div class="coL">
+        <div class="col">
           <div class="card p-3">
             <h5 class="mb-3 fw-bold text-dark">Enrollment by Academic Year</h5>
             <canvas id="trendChart" style="width: 100%"></canvas>
             <p class="fw-bold text-center">Academic Year</p>
           </div>
         </div>
-
-        <div class="row mt-3">
-          <div class="col col-xl-8 m-6">
+    </div>  
+        <div class="row mt-3 flow-content">
+          <div class="col col-xl-8">
             <div class="card p-3">
               <h5 class="mb-3 fw-bold">Enrollment by Semester</h5>
-              <canvas
-                id="semChart"
-                style="width: 100%; max-width: 700px"
-              ></canvas>
+              <canvas id="semChart"></canvas>
               <p class="fw-bold text-center">Enrollment Rate</p>
             </div>
           </div>
@@ -54,12 +51,12 @@
               <table class="table table-sm text-center table-hover">
                 <thead>
                   <tr>
-                    <th scope="col " class="fs-6">Academic Year</th>
+                    <th scope="col " class="fs-6">Program</th>
                     <th colspan="2">Information Technology</th>
                     <th colspan="2">Information Systems</th>
                   </tr>
                   <tr>
-                    <th></th>
+                    <th>Academic Year</th>
                     <th>1st Sem</th>
                     <th>2nd Sem</th>
                     <th>1st Sem</th>
