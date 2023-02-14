@@ -50,42 +50,48 @@ trendChart();
 
 const renderBarChart = () => {
   const ctx = document.getElementById('semChart').getContext('2d');
+  const chartLabels = [
+    '1st Semester ( A.Y. 2015 - 2016)',
+    '2nd Semester ( A.Y. 2015 - 2016)',
+    '1st Semester ( A.Y. 2016 - 2017)',
+    '2nd Semester ( A.Y. 2016 - 2017)',
+    '1st Semester ( A.Y. 2017 - 2018)',
+    '2nd Semester ( A.Y. 2017 - 2018)',
+    '1st Semester ( A.Y. 2018 - 2019)',
+    '2nd Semester ( A.Y. 2018 - 2019)',
+    '1st Semester ( A.Y. 2019 - 2020)',
+    '2nd Semester ( A.Y. 2019 - 2020)',
+    '1st Semester ( A.Y. 2020 - 2021)',
+    '2nd Semester ( A.Y. 2020 - 2021)',
+    '1st Semester ( A.Y. 2021 - 2022)',
+    '2nd Semester ( A.Y. 2021 - 2022)',
+    '1st Semester ( A.Y. 2022 - 2023)',
+  ];
+  const dataIT = [
+    649, 630, 627, 584, 538, 529, 556, 517, 563, 530, 613, 555, 686, 660, 782,
+    753,
+  ];
+  const dataIS = [
+    250, 240, 182, 169, 120, 112, 119, 107, 124, 122, 128, 142, 142, 133, 155,
+    195,
+  ];
+  chartLabels.reverse();
+  dataIT.reverse();
+  dataIS.reverse();
   const barChart = new Chart(ctx, {
     type: 'bar',
     data: {
-      labels: [
-        '1st Semester ( A.Y. 2015 - 2016)',
-        '2nd Semester ( A.Y. 2015 - 2016)',
-        '1st Semester ( A.Y. 2016 - 2017)',
-        '2nd Semester ( A.Y. 2016 - 2017)',
-        '1st Semester ( A.Y. 2017 - 2018)',
-        '2nd Semester ( A.Y. 2017 - 2018)',
-        '1st Semester ( A.Y. 2018 - 2019)',
-        '2nd Semester ( A.Y. 2018 - 2019)',
-        '1st Semester ( A.Y. 2019 - 2020)',
-        '2nd Semester ( A.Y. 2019 - 2020)',
-        '1st Semester ( A.Y. 2020 - 2021)',
-        '2nd Semester ( A.Y. 2020 - 2021)',
-        '1st Semester ( A.Y. 2021 - 2022)',
-        '2nd Semester ( A.Y. 2021 - 2022)',
-        '1st Semester ( A.Y. 2022 - 2023)',
-      ],
+      labels: chartLabels,
       datasets: [
         {
           label: 'Information Technology',
           backgroundColor: '#1BA605',
-          data: [
-            649, 630, 627, 584, 538, 529, 556, 517, 563, 530, 613, 555, 686,
-            660, 782, 753,
-          ],
+          data: dataIT,
         },
         {
           label: 'Information Systems',
           backgroundColor: '#FBAA30',
-          data: [
-            250, 240, 182, 169, 120, 112, 119, 107, 124, 122, 128, 142, 142,
-            133, 155, 195,
-          ],
+          data: dataIS,
         },
       ],
     },
