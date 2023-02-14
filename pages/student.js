@@ -1,5 +1,5 @@
 const trendChart = () => {
-  var xLabel = [
+  const xLabel = [
     ' 2015-2016',
     ' 2016-2017',
     ' 2017-2018',
@@ -78,6 +78,7 @@ const renderBarChart = () => {
   chartLabels.reverse();
   dataIT.reverse();
   dataIS.reverse();
+  const chartConfig = {};
   const barChart = new Chart(ctx, {
     type: 'bar',
     data: {
