@@ -31,4 +31,9 @@
   display: block;
   font-size: 2rem;
   font-weight: 700;
+  color: rgba(91, 0, 0, 0.202);
+}
+
+.footer-text {
+  font-size: 0.8rem;
 }
