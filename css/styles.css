@@ -15,6 +15,10 @@ body {
   color: #ffffff;
 } */
 
+.container {
+  position: relative;
+}
+
 .logo {
   object-fit: fill;
   display: block;
@@ -47,6 +51,8 @@ body {
   position: fixed;
   top: 0;
   right: 0;
+  margin: 0 0 3rem 0;
+  font-size: 1rem;
 }
 
 .text-green {
@@ -125,4 +131,12 @@ body {
 
 .hidden {
   display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .btn-back-mod {
+    max-width: 20%;
+    transform: scale(0.8);
+    font-size: 0.8rem;
+  }
 }
