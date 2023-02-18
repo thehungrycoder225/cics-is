@@ -319,3 +319,45 @@ const renderAttainmentIS = () => {
 };
 
 renderAttainmentIS();
+
+const c = console.log.bind(this);
+
+const facultyCollection = [];
+
+const Faculty = (name, designation, rank, imgUrl) => {
+  return {
+    name,
+    designation,
+    rank,
+    imgUrl,
+    education: [],
+    addEducation: function (item) {
+      this.education.push(item);
+    },
+  };
+};
+
+const fOne = Faculty(
+  'Ronjie Mar Malinao',
+  'College Dean',
+  'Associate Professor 3',
+  `../images/faculty/Malinao.JPG`
+);
+
+fOne.addEducation(
+  'Doctor in Information Technology Technological University of the Philippines – Manila'
+);
+
+fOne.addEducation(
+  `Master in Information Technology Manuel S. Enverga University Foundation, Inc.
+ `
+);
+
+fOne.addEducation(
+  `Bachelor of Science in Information Technology Marinduque State College`
+);
+c(fOne);
+
+facultyCollection.push(fOne);
+
+c(facultyCollection);

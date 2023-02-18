@@ -25,6 +25,9 @@ body {
   text-align: center;
   padding: 1rem;
 }
+.flow-content * + * {
+  margin-top: 1rem;
+}
 
 .card {
   outline: 1px transparent;
