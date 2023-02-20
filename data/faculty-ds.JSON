@@ -1,0 +1,36 @@
+[
+  {
+    "name": "Ronjie Mar L. Malinao",
+    "designation": "College Dean",
+    "rank": "Associate Professor 3",
+    "education": [
+      "Doctor in Information Technology Technological University of the Philippines – Manila",
+      "Master in Information Technology Manuel S. Enverga University Foundation, Inc.",
+      "Bachelor of Science in Information Technology Marinduque State College"
+    ],
+    "imgUrl": "../images/faculty//Malinao.png"
+  },
+  {
+    "name": "Julieta Q. Nabos",
+    "designation": "College Instructor",
+    "rank": "Associate Professor 2",
+    "education": [
+      "Doctor of Philosophy in Computer Science Ateneo De Manila University",
+      "Master in Information Systems (15 units)      University of the Philippines Open University  ",
+      "Master in Education Management  Marinduque State College ",
+      "Bachelor of Science in Computer Science Eulogio “Amang” Rodriguez Institute of Science & Technology      "
+    ],
+    "imgUrl": "../images/faculty//JNabos.png"
+  },
+  {
+    "name": "Eunice G. De Luna-Malinao",
+    "designation": "College Instructor",
+    "rank": "Assistant Professor 3",
+    "education": [
+      "Master in Information Technology Technological University of the Philippines – Manila",
+      "Master in Educational Management   Marinduque State College      ",
+      "Bachelor of Science in Information Technology                                                                Marinduque State College "
+    ],
+    "imgUrl": "../images/faculty//DeLuna.png"
+  }
+]

@@ -447,6 +447,17 @@ fSix.addEducation(
 
 facultyCollection.push(fOne, fTwo, fThree, fFour, fFive, fSix);
 
+let facultyDS;
+const fetchFacultyData = () => {
+  fetch('../data/faculty-ds.json')
+    .then((response) => response.json())
+    .then((data) => {
+      renderFaculty(data);
+    });
+};
+
+fetchFacultyData();
+
 // A Row can Only Contain 3 Faculty
 const galleryParent = document.querySelector('.faculty-gallery_container');
 
@@ -457,8 +468,8 @@ renderCol.classList.add('col-xl-12');
 const renderCardGroup = document.createElement('div');
 renderCardGroup.classList.add('card-group');
 
-const renderFaculty = () => {
-  facultyCollection.forEach((faculty) => {
+const renderFaculty = (ds) => {
+  ds.forEach((faculty) => {
     const renderCard = document.createElement('div');
     renderCard.classList.add('card');
     renderCard.classList.add('mb-3');
