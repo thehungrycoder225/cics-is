@@ -451,6 +451,7 @@ facultyCollection.push(fOne, fTwo, fThree, fFour, fFive, fSix);
 const galleryParentAdmin = document.querySelector('.gallery_admin');
 const galleryParentRegular = document.querySelector('.gallery_regular');
 const galleryParentLecturer = document.querySelector('.gallery_lecturer');
+const galleryParentGenEd = document.querySelector('.gallery_genEd');
 
 // const renderRow = document.createElement('div');
 // renderRow.classList.add('row');
@@ -511,6 +512,9 @@ const fetchFacultyData = () => {
         }
         if (category.lecturer) {
           renderFaculty(category.lecturer, galleryParentLecturer);
+        }
+        if (category.gened) {
+          renderFaculty(category.gened, galleryParentGenEd);
         }
       });
     });

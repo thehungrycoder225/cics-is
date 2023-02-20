@@ -195,6 +195,102 @@
         "imgUrl": "../images/faculty//Alojado.png"
       },
       {
+        "name": "Romeo N. Labayna",
+        "designation": "Lecturer",
+        "rank": "College Lecturer",
+        "education": [
+          "Bachelor of Science in Information Technology                      Marinduque State College"
+        ],
+        "imgUrl": "../images/faculty//Labayna.png"
+      },
+      {
+        "name": "Jayvi M. Mandalihan",
+        "designation": "Lecturer",
+        "rank": "College Lecturer",
+        "education": [
+          "Bachelor of Science in Computer Engineering                   Marinduque State College"
+        ],
+        "imgUrl": "../images/faculty//Mandalihan.png"
+      },
+      {
+        "name": "Kirby M. Palomares",
+        "designation": "Lecturer",
+        "rank": "College Lecturer",
+        "education": [
+          "Bachelor of Science in Information Technology                 Marinduque State College"
+        ],
+        "imgUrl": "../images/faculty//Palomares.png"
+      },
+      {
+        "name": "Wilmer M. Pascual",
+        "designation": "Lecturer",
+        "rank": "College Lecturer",
+        "education": [
+          "Master in Information Technology (on-going) Marinduque State College",
+          "Bachelor of Science in Computer Science Kolehiyo ng Lungsod ng Lipa"
+        ],
+        "imgUrl": "../images/faculty//Pascual.png"
+      },
+      {
+        "name": "Kaye Harris E. Salvacion",
+        "designation": "Lecturer",
+        "rank": "College Lecturer",
+        "education": [
+          "Master in Information Technology (on-going)                          Technological University of the Philippines – Manila",
+          "Bachelor of Science in Information Technology                      Marinduque State College"
+        ],
+        "imgUrl": "../images/faculty//Pascual.png"
+      }
+    ],
+    "gened": [
+      {
+        "name": "Robert M. Mascareñas",
+        "designation": "College Instructor ",
+        "rank": "Assistant Professor II",
+        "education": [
+          "Master in Educational Management Major in Language Teaching (CAR)  Master in Educational Management Major in Language Teaching (CAR)                                  Marinduque State College"
+        ],
+        "imgUrl": "../images/faculty//Mascareñas.png"
+      },
+      {
+        "name": "Robine Cherise R. Montera",
+        "designation": "College Instructor ",
+        "rank": "Instructor I",
+        "education": [
+          "Master of Education major in Guidance and Counseling Manuel S. Enverga University Foundation",
+          "Bachelor of Science in Psychology Sacred Heart College"
+        ],
+        "imgUrl": "../images/faculty//.png"
+      },
+      {
+        "name": "Arben A. Ornedo",
+        "designation": "Lecturer",
+        "rank": "College Lecturer",
+        "education": [
+          "Master of Arts in Clinical Psychology (CAR) University of Sto. Tomas",
+          "Master in Educational Management (with units) Marinduque State College",
+          "Bachelor of Science in Psychology St. Dominic College of Asia          "
+        ],
+        "imgUrl": "../images/faculty//Arben.jpg"
+      },
+      {
+        "name": "Ivy Joy N. Aguiflor",
+        "designation": "Lecturer",
+        "rank": "College Lecturer",
+        "education": [
+          "Master of Arts in Education Major in Mathematics Teaching (CAR)                                             Marinduque State College",
+          "Bachelor of Secondary Education Major in Mathematics                                               Marinduque State College"
+        ],
+        "imgUrl": "../images/faculty//Aguiflor.png"
+      },
+      {
+        "name": "",
+        "designation": "",
+        "rank": "",
+        "education": [""],
+        "imgUrl": "../images/faculty//.png"
+      },
+      {
         "name": "",
         "designation": "",
         "rank": "",

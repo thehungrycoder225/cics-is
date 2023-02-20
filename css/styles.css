@@ -143,3 +143,15 @@ body {
     font-size: 0.8rem;
   }
 }
+/* 
+.gallery_admin .card:hover,
+.gallery_regular .card:hover,
+.gallery_lecturer .card:hover {
+  transform: scale(1.1);
+}
+
+.gallery_admin .card,
+.gallery_lecturer .card,
+.gallery_regular .card {
+  transition: all 0.2s ease-in-out;
+} */
