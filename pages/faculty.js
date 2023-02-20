@@ -341,7 +341,7 @@ const fOne = Faculty(
   'Ronjie Mar Malinao',
   'College Dean',
   'Associate Professor 3',
-  `../images/faculty/Malinao.JPG`
+  `../images/faculty/Malinao.png`
 );
 
 fOne.addEducation(
@@ -356,8 +356,129 @@ fOne.addEducation(
 fOne.addEducation(
   `Bachelor of Science in Information Technology Marinduque State College`
 );
-c(fOne);
 
-facultyCollection.push(fOne);
+const fTwo = Faculty(
+  'Julieta Q. Nabos',
+  'College Instructor',
+  'Associate Professor 2',
+  `../images/faculty/JNabos.png`
+);
 
-c(facultyCollection);
+fTwo.addEducation(
+  `Doctor of Philosophy in Computer Science Ateneo De Manila University`
+);
+
+fTwo.addEducation(`Master in Information Systems (15 units)
+University of the Philippines Open University 
+`);
+
+fTwo.addEducation(`Master in Education Management
+Marinduque State College
+`);
+
+fTwo.addEducation(`Bachelor of Science in Computer Science
+Eulogio “Amang” Rodriguez Institute of Science & Technology`);
+
+const fThree = Faculty(
+  `Eunice G. de Luna - Malinao`,
+  `College Instructor`,
+  `Assistant Professor 3`,
+  `../images/faculty/DeLuna.png`
+);
+
+fThree.addEducation(
+  `Master in Information Technology Technological University of the Philippines – Manila`
+);
+
+fThree.addEducation(
+  `Master in Educational Management   Marinduque State College`
+);
+
+fThree.addEducation(
+  `Bachelor of Science in Information Technology Marinduque State College`
+);
+
+const fFour = Faculty(
+  `Lorimer L. Imperio`,
+  `College Instructor`,
+  `Assistant Professor 2`
+);
+
+fFour.addEducation(`Master in Information Technology 
+Manuel S. Enverga University Foundation, Inc
+`);
+
+fFour.addEducation(
+  `Bachelor of Science in Computer Science University of the East - Manila`
+);
+
+fFour.imgUrl = `../images/faculty/Imperio.png`;
+
+const fFive = Faculty(
+  `Christopher J. Rebistual`,
+  `College Instructor`,
+  `Assistant Professor 2`,
+  `../images/faculty/Rebistual.png`
+);
+
+fFive.addEducation(`Doctor of Education Marinduque State College`);
+fFive.addEducation(`Master of Arts in Education  Marinduque State College`);
+fFive.addEducation(`Master of Engineering Management (27 units)                                      
+Pamantasan ng Lungsod ng Maynila
+`);
+fFive.addEducation(
+  `Bachelor of Science in Computer Science   Pamantasan ng Lungsod ng Maynila`
+);
+
+facultyCollection.push(fOne, fTwo, fThree, fFour, fFive);
+
+// A Row can Only Contain 3 Faculty
+const galleryParent = document.querySelector('.faculty-gallery_container');
+
+const renderRow = document.createElement('div');
+renderRow.classList.add('row');
+const renderCol = document.createElement('div');
+renderCol.classList.add('col-xl-12');
+const renderCardGroup = document.createElement('div');
+renderCardGroup.classList.add('card-group');
+
+const renderFaculty = () => {
+  facultyCollection.forEach((faculty) => {
+    const renderCard = document.createElement('div');
+    renderCard.classList.add('card');
+    renderCard.classList.add('mb-3');
+    renderCard.classList.add('mx-3');
+    renderCard.classList.add('p-2');
+
+    renderCard.innerHTML = `<div class="row g-0">
+    <div class="col-md-4">
+      <img
+        src="${faculty.imgUrl}"
+        class="img-fluid rounded"
+        alt="..."
+      />
+    </div>
+    <div class="col-md-8 d-flex">
+      <div
+        class="card-body align-self-center justify-content-center"
+      >
+        <div class="">
+          <h5 class="card-title fw-bold">${faculty.name}</h5>
+          <p class="card-text fs-6">${faculty.designation}</p>
+          <h6>Educational Attainment</h6>
+          <ul>
+           ${faculty.education.map((item) => `<li>${item}</li>`).join('')}
+          </ul>
+          <h6>Academic Rank</h6>
+          <ul>
+            <li> ${faculty.rank}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>`;
+    galleryParent.appendChild(renderCard);
+  });
+};
+
+renderFaculty();
