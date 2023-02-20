@@ -447,28 +447,19 @@ fSix.addEducation(
 
 facultyCollection.push(fOne, fTwo, fThree, fFour, fFive, fSix);
 
-let facultyDS;
-const fetchFacultyData = () => {
-  fetch('../data/faculty-ds.json')
-    .then((response) => response.json())
-    .then((data) => {
-      renderFaculty(data);
-    });
-};
-
-fetchFacultyData();
-
 // A Row can Only Contain 3 Faculty
-const galleryParent = document.querySelector('.faculty-gallery_container');
+const galleryParentAdmin = document.querySelector('.gallery_admin');
+const galleryParentRegular = document.querySelector('.gallery_regular');
+const galleryParentLecturer = document.querySelector('.gallery_lecturer');
 
-const renderRow = document.createElement('div');
-renderRow.classList.add('row');
-const renderCol = document.createElement('div');
-renderCol.classList.add('col-xl-12');
-const renderCardGroup = document.createElement('div');
-renderCardGroup.classList.add('card-group');
+// const renderRow = document.createElement('div');
+// renderRow.classList.add('row');
+// const renderCol = document.createElement('div');
+// renderCol.classList.add('col-xl-12');
+// const renderCardGroup = document.createElement('div');
+// renderCardGroup.classList.add('card-group');
 
-const renderFaculty = (ds) => {
+const renderFaculty = (ds, parentElement) => {
   ds.forEach((faculty) => {
     const renderCard = document.createElement('div');
     renderCard.classList.add('card');
@@ -503,8 +494,27 @@ const renderFaculty = (ds) => {
       </div>
     </div>
   </div>`;
-    galleryParent.appendChild(renderCard);
+    parentElement.appendChild(renderCard);
   });
 };
 
+const fetchFacultyData = () => {
+  fetch('../data/faculty-ds.json')
+    .then((response) => response.json())
+    .then((data) => {
+      data.forEach((category) => {
+        if (category.admin) {
+          renderFaculty(category.admin, galleryParentAdmin);
+        }
+        if (category.regular) {
+          renderFaculty(category.regular, galleryParentRegular);
+        }
+        if (category.lecturer) {
+          renderFaculty(category.lecturer, galleryParentLecturer);
+        }
+      });
+    });
+};
+
+fetchFacultyData();
 renderFaculty();

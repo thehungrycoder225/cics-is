@@ -1,36 +1,185 @@
 [
   {
-    "name": "Ronjie Mar L. Malinao",
-    "designation": "College Dean",
-    "rank": "Associate Professor 3",
-    "education": [
-      "Doctor in Information Technology Technological University of the Philippines – Manila",
-      "Master in Information Technology Manuel S. Enverga University Foundation, Inc.",
-      "Bachelor of Science in Information Technology Marinduque State College"
+    "admin": [
+      {
+        "name": "Ronjie Mar L. Malinao",
+        "designation": "College Dean",
+        "rank": "Associate Professor 3",
+        "education": [
+          "Doctor in Information Technology Technological University of the Philippines – Manila",
+          "Master in Information Technology Manuel S. Enverga University Foundation, Inc.",
+          "Bachelor of Science in Information Technology Marinduque State College"
+        ],
+        "imgUrl": "../images/faculty//Malinao.png"
+      },
+      {
+        "name": "Maria Nessa M. Solomon   ",
+        "designation": "Assistant Dean",
+        "rank": "Assistant Prof.2",
+        "education": [
+          "Doctor in Information Technology University of the East - Manila (CAR)",
+          "Master of Arts in Education Marinduque State College",
+          "Bachelor of Science in Information Management Marinduque State College"
+        ],
+        "imgUrl": "../images/faculty//Solomon.png"
+      },
+      {
+        "name": "Art Jervin L. Magcamit",
+        "designation": "Program Head(Information Technology)",
+        "rank": "Instructor 1",
+        "education": [
+          "Master in Information Technology Adamson University     ",
+          "Bachelor of Science in Information Technology   Marinduque State College"
+        ],
+        "imgUrl": "../images/faculty//Magcamit.png"
+      },
+      {
+        "name": "Beneden M. Logmao    ",
+        "designation": "Program Head(Information Systems)",
+        "rank": "Assistant Prof.2",
+        "education": [
+          "Master in Information Systems  Asia Pacific College   ",
+          "Bachelor of Science in Information Management   Marinduque State College"
+        ],
+        "imgUrl": "../images/faculty//Logmao.png"
+      },
+      {
+        "name": " Christine May L. Nabos        ",
+        "designation": "R & E Coordinator",
+        "rank": "Instructor 1",
+        "education": [
+          "Master in Information Technology                              Adamson University  ",
+          "Bachelor of Science in Information Technology   Marinduque State College"
+        ],
+        "imgUrl": "../images/faculty//Nabos.png"
+      },
+      {
+        "name": "Doreena Joy C. Borja",
+        "designation": "OJT Coordinator",
+        "rank": "Instructor 1",
+        "education": [
+          "Master in Information Technology                              University of the East – Manila  ",
+          "Bachelor of Science in Information Technology   Marinduque State College"
+        ],
+        "imgUrl": "../images/faculty//Borja.png"
+      },
+
+      {
+        "name": "Kevin H. Jasmin",
+        "designation": "OJT Coordinator",
+        "rank": "Instructor 1",
+        "education": [
+          "Master in Information Systems                     Asia Pacific College       ",
+          "Bachelor of Science in Information Technology   Marinduque State College"
+        ],
+        "imgUrl": "../images/faculty//Jasmin.png"
+      },
+      {
+        "name": "Jonex Ornedo",
+        "designation": "Technical Support / Support Staff",
+        "rank": "Staff",
+        "education": [
+          "Bachelor of Science in Information Technology   Marinduque State College"
+        ],
+        "imgUrl": "../images/faculty//Ornedo.png"
+      }
     ],
-    "imgUrl": "../images/faculty//Malinao.png"
-  },
-  {
-    "name": "Julieta Q. Nabos",
-    "designation": "College Instructor",
-    "rank": "Associate Professor 2",
-    "education": [
-      "Doctor of Philosophy in Computer Science Ateneo De Manila University",
-      "Master in Information Systems (15 units)      University of the Philippines Open University  ",
-      "Master in Education Management  Marinduque State College ",
-      "Bachelor of Science in Computer Science Eulogio “Amang” Rodriguez Institute of Science & Technology      "
+    "regular": [
+      {
+        "name": "Julieta Q. Nabos",
+        "designation": "Dean Graduate School",
+        "rank": "Associate Professor 2",
+        "education": [
+          "Doctor of Philosophy in Computer Science Ateneo De Manila University",
+          "Master in Information Systems (15 units)      University of the Philippines Open University  ",
+          "Master in Education Management  Marinduque State College ",
+          "Bachelor of Science in Computer Science Eulogio “Amang” Rodriguez Institute of Science & Technology      "
+        ],
+        "imgUrl": "../images/faculty//JNabos.png"
+      },
+      {
+        "name": "Wilbert P. Benedicto",
+        "designation": "ICTSC Director",
+        "rank": "Instructor I",
+        "education": [
+          "Master in Information Systems                              University of the East – Manila ",
+          "Bachelor of Science in Information Technology   Marinduque State College"
+        ],
+        "imgUrl": "../images/faculty//Benedicto.png"
+      },
+      {
+        "name": "Eunice G. De Luna-Malinao",
+        "designation": "College Instructor",
+        "rank": "Assistant Professor 3",
+        "education": [
+          "Master in Information Technology Technological University of the Philippines – Manila",
+          "Master in Educational Management   Marinduque State College      ",
+          "Bachelor of Science in Information Technology                                                                Marinduque State College "
+        ],
+        "imgUrl": "../images/faculty//DeLuna.png"
+      },
+      {
+        "name": "Lorimer L. Imperio",
+        "designation": "College Instructor",
+        "rank": "Assistant Professor 2",
+        "education": [
+          "Master in Information Technology       Manuel S. Enverga University Foundation, Inc",
+          "Bachelor of Science in Computer Science                                              University of the East - Manila"
+        ],
+        "imgUrl": "../images/faculty//Imperio.png"
+      },
+      {
+        "name": "Christopher J. Rebistual",
+        "designation": "College Instructor",
+        "rank": "Assistant Professor 2",
+        "education": [
+          "Doctor of Education Marinduque State College  ",
+          "Master of Arts in Education                                         Marinduque State College",
+          "Master of Engineering Management (27 units)                                      Pamantasan ng Lungsod ng Maynila",
+          "Bachelor of Science in Computer Science    Pamantasan ng Lungsod ng Maynila"
+        ],
+        "imgUrl": "../images/faculty//Rebistual.png"
+      },
+
+      {
+        "name": "Villi Dane M. Go",
+        "designation": "College Instructor ",
+        "rank": "Instructor 1",
+        "education": [
+          "Master of Science in Computer Science AMA University ",
+          "Bachelor of Science in Computer Science  Educational Systems Technological Institute"
+        ],
+        "imgUrl": "../images/faculty//Go.png"
+      },
+
+      {
+        "name": "Jeffrey M. Marapia",
+        "designation": "College Instructor",
+        "rank": "Instructor 1",
+        "education": [
+          "Master of Science in Computer Science AMA University ",
+          "Bachelor of Science in Computer Science AMA University"
+        ],
+        "imgUrl": "../images/faculty//Marapia.png"
+      },
+      {
+        "name": "Ryan Clifford L. Perez",
+        "designation": "College Instructor ",
+        "rank": "Instructor I",
+        "education": [
+          "Master in Information Technology                                   Jose Rizal University",
+          "Bachelor of Science in Information Technology   Marinduque State College"
+        ],
+        "imgUrl": "../images/faculty//Perez.png"
+      },
+      {
+        "name": "",
+        "designation": "",
+        "rank": "",
+        "education": [""],
+        "imgUrl": "../images/faculty//.png"
+      }
     ],
-    "imgUrl": "../images/faculty//JNabos.png"
-  },
-  {
-    "name": "Eunice G. De Luna-Malinao",
-    "designation": "College Instructor",
-    "rank": "Assistant Professor 3",
-    "education": [
-      "Master in Information Technology Technological University of the Philippines – Manila",
-      "Master in Educational Management   Marinduque State College      ",
-      "Bachelor of Science in Information Technology                                                                Marinduque State College "
-    ],
-    "imgUrl": "../images/faculty//DeLuna.png"
+    "lecturer": []
   }
 ]
