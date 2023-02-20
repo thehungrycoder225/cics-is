@@ -430,7 +430,22 @@ fFive.addEducation(
   `Bachelor of Science in Computer Science   Pamantasan ng Lungsod ng Maynila`
 );
 
-facultyCollection.push(fOne, fTwo, fThree, fFour, fFive);
+const fSix = Faculty(
+  `Doreena Joy C. Borja`,
+  `College Instructor / OJT Coordinator`,
+  `Instructor I`,
+  `../images/faculty/Borja.png`
+);
+
+fSix.addEducation(
+  `Master in Information Technology University of the East – Manila`
+);
+
+fSix.addEducation(
+  `Bachelor of Science in Information Technology   Marinduque State College`
+);
+
+facultyCollection.push(fOne, fTwo, fThree, fFour, fFive, fSix);
 
 // A Row can Only Contain 3 Faculty
 const galleryParent = document.querySelector('.faculty-gallery_container');
