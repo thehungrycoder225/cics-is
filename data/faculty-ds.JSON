@@ -173,13 +173,34 @@
         "imgUrl": "../images/faculty//Perez.png"
       },
       {
+        "name": "Kierven A. Villaruel",
+        "designation": "College Instructor ",
+        "rank": "Instructor 1",
+        "education": [
+          "Master in Information Technology                              Adamson University",
+          "Bachelor of Science in Information Technology   Marinduque State College"
+        ],
+        "imgUrl": "../images/faculty//Villaruel.png"
+      }
+    ],
+    "lecturer": [
+      {
+        "name": "Carmelo O. Alojado",
+        "designation": "Lecturer",
+        "rank": "College Lecturer",
+        "education": [
+          "Master in Information Technology (on-going)                          Technological University of the Philippines - Manila    ",
+          "Bachelor of Science in Information Technology                      Marinduque State College"
+        ],
+        "imgUrl": "../images/faculty//Alojado.png"
+      },
+      {
         "name": "",
         "designation": "",
         "rank": "",
         "education": [""],
         "imgUrl": "../images/faculty//.png"
       }
-    ],
-    "lecturer": []
+    ]
   }
 ]
