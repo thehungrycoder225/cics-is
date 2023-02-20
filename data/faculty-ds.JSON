@@ -75,7 +75,7 @@
         "imgUrl": "../images/faculty//Jasmin.png"
       },
       {
-        "name": "Jonex Ornedo",
+        "name": "Jonex M. Ornedo",
         "designation": "Technical Support / Support Staff",
         "rank": "Staff",
         "education": [
@@ -239,7 +239,7 @@
           "Master in Information Technology (on-going)                          Technological University of the Philippines – Manila",
           "Bachelor of Science in Information Technology                      Marinduque State College"
         ],
-        "imgUrl": "../images/faculty//Pascual.png"
+        "imgUrl": "../images/faculty//Salvacion.png"
       }
     ],
     "gened": [
@@ -284,18 +284,55 @@
         "imgUrl": "../images/faculty//Aguiflor.png"
       },
       {
-        "name": "",
-        "designation": "",
-        "rank": "",
-        "education": [""],
-        "imgUrl": "../images/faculty//.png"
+        "name": "Mylene J. Layag",
+        "designation": "Lecturer",
+        "rank": "College Lecturer",
+        "education": [
+          "Master of Arts in Education Major in Physical Education                                                 Laguna State Polytechnic University",
+          "Bachelor of Secondary Education Major in Maphe   Marinduque State College"
+        ],
+        "imgUrl": "../images/faculty//Layag.png"
       },
       {
-        "name": "",
-        "designation": "",
-        "rank": "",
-        "education": [""],
-        "imgUrl": "../images/faculty//.png"
+        "name": "Abegail Joy L. Laylay",
+        "designation": "Lecturer",
+        "rank": "College Lecturer",
+        "education": [
+          "Bachelor of Secondary Education Major in Social Sciences                                               Marinduque State College"
+        ],
+        "imgUrl": "../images/faculty//Laylay.png"
+      },
+      {
+        "name": " Erika Mae B. Nuñez",
+        "designation": "Lecturer",
+        "rank": "College Lecturer",
+        "education": ["Bachelor of Science in Education Major in Language"],
+        "imgUrl": "../images/faculty//Nuñez.png"
+      },
+      {
+        "name": "Ryan Harvy P. Quindoza",
+        "designation": "Lecturer",
+        "rank": "College Lecturer",
+        "education": [
+          "Bachelor of Secondary Education Major in Social Sciences                                               Marinduque State College"
+        ],
+        "imgUrl": "../images/faculty//Quindoza.png"
+      },
+      {
+        "name": "John Robert Reginio",
+        "designation": "Lecturer",
+        "rank": "College Lecturer",
+        "education": ["Bachelor of Science in Education Major in Language"],
+        "imgUrl": "../images/faculty//Reginio.png"
+      },
+      {
+        "name": "Richard M. Tuliao",
+        "designation": "Lecturer",
+        "rank": "College Lecturer",
+        "education": [
+          "Bachelor of Secondary Education Major in Maphe Marinduque State College "
+        ],
+        "imgUrl": "../images/faculty//Tuliao.png"
       }
     ]
   }
