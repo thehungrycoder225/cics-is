@@ -44,6 +44,16 @@
         "imgUrl": "../images/faculty//Logmao.png"
       },
       {
+        "name": "Loriebenn B. Madriño",
+        "designation": "Program Head(Information Systems - Sta Cruz Branch)",
+        "rank": "Instructor I",
+        "education": [
+          "Master in Information Systems  Asia Pacific College   ",
+          "Bachelor of Science in Information Science   Marinduque State College"
+        ],
+        "imgUrl": "../images/faculty//placeholder_female.jpeg"
+      },
+      {
         "name": " Christine May L. Nabos        ",
         "designation": "R & E Coordinator",
         "rank": "Instructor 1",
@@ -96,6 +106,17 @@
           "Bachelor of Science in Computer Science Eulogio “Amang” Rodriguez Institute of Science & Technology      "
         ],
         "imgUrl": "../images/faculty//JNabos.png"
+      },
+      {
+        "name": "Randell R. Reginio",
+        "designation": "Campus Director (Sta. Cruz Branch)",
+        "rank": "Assistant Prof.3",
+        "education": [
+          "Doctor of Technology          Technological University of the Philippines, Ermita, Manila ",
+          "Master in Information Technology          Technological University of the Philippines, Ermita, Manila             ",
+          "Bachelor of Science in Information Management          Marinduque State College, Boac, Marinduque"
+        ],
+        "imgUrl": "../images/faculty//randell.jpg"
       },
       {
         "name": "Wilbert P. Benedicto",
@@ -271,7 +292,7 @@
           "Master in Educational Management (with units) Marinduque State College",
           "Bachelor of Science in Psychology St. Dominic College of Asia          "
         ],
-        "imgUrl": "../images/faculty//Arben.jpg"
+        "imgUrl": "../images/faculty//Arben.png"
       },
       {
         "name": "Ivy Joy N. Aguiflor",
@@ -333,6 +354,92 @@
           "Bachelor of Secondary Education Major in Maphe Marinduque State College "
         ],
         "imgUrl": "../images/faculty//Tuliao.png"
+      }
+    ],
+    "lecturerSC": [
+      {
+        "name": "JEREMIE R. ROBLES",
+        "designation": "Lecturer ",
+        "rank": "College Lecturer",
+        "education": [
+          "Master in Information Technology           Technological University of the Philippines, Ermita, Manila ",
+          "Bachelor of Science in Information Systems          Marinduque State College, Matalaba, Sta. Cruz, Marinduque"
+        ],
+        "imgUrl": "../images/faculty//placeholder_male.jpeg"
+      },
+      {
+        "name": "ALYZA MAE P. PARDILLA",
+        "designation": "Lecturer ",
+        "rank": "College Lecturer",
+        "education": [
+          "Bachelor of Science in Information Systems          Marinduque State College, Matalaba, Sta. Cruz, Marinduque"
+        ],
+        "imgUrl": "../images/faculty//pardilla.png"
+      },
+      {
+        "name": "PAMELA J. MONTANTE",
+        "designation": "Lecturer ",
+        "rank": "College Lecturer",
+        "education": [
+          "Bachelor of Science in Information Systems          Marinduque State College, Matalaba, Sta. Cruz, Marinduque"
+        ],
+        "imgUrl": "../images/faculty//montante.png"
+      },
+      {
+        "name": "ALVIN P. REGENCIA",
+        "designation": "Lecturer ",
+        "rank": "College Lecturer",
+        "education": [
+          "Mater of Science in Computing Engineering           MAPUA University",
+          "Computer Egineering Major in Computer Engineering Marinduque State College"
+        ],
+        "imgUrl": "../images/faculty//placeholder_male.jpeg"
+      }
+    ],
+    "genedSC": [
+      {
+        "name": "Wilmer Imperio III",
+        "designation": "College Instructor ",
+        "rank": "Assistant Professor I",
+        "education": [
+          "Doctor in Public Administration          PUP-Open University Systems ",
+          "Master in Public Administration           Marinduque State College",
+          "MA Educational Management (21 units)          Marinduque State College",
+          "MA Political Science (21 units) University of Manila",
+          "Bachelor of Arts, Major in Political Science Adamson University"
+        ],
+        "imgUrl": "../images/faculty//placeholder_male.jpeg"
+      },
+      {
+        "name": "Joy R. Profugo",
+        "designation": "College Instructor ",
+        "rank": "Associate Professor III",
+        "education": [
+          "Doctor of Education in Curriculum Development and Management           Marinduque State College",
+          "Master in Education  Marinduque State College ",
+          "Bachelor of Arts in English Marinduque Community College"
+        ],
+        "imgUrl": "../images/faculty//placeholder_female.jpeg"
+      },
+      {
+        "name": "Amelito R. Zulueta",
+        "designation": "College Instructor ",
+        "rank": "Assistant Prof.1",
+        "education": [
+          "MA Educational Management          Marinduque State College",
+          "Bachelor of Secondary Education          Santa Cruz Institute         "
+        ],
+        "imgUrl": "../images/faculty//placeholder_male.jpeg"
+      },
+      {
+        "name": "Jerome Revidizo",
+        "designation": "College Instructor ",
+        "rank": "Instructor I",
+        "education": [
+          "Master’s Degree in Early Childhood Education          National Teachers College",
+          "Bachelor of Elementary Education          Marinduque State College         "
+        ],
+        "imgUrl": "../images/faculty//placeholder_male.jpeg"
       }
     ]
   }

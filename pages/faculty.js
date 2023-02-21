@@ -324,8 +324,9 @@ renderAttainmentIS();
 const galleryParentAdmin = document.querySelector('.gallery_admin');
 const galleryParentRegular = document.querySelector('.gallery_regular');
 const galleryParentLecturer = document.querySelector('.gallery_lecturer');
+const galleryParentLecturerSC = document.querySelector('.gallery_lecturer-sc');
 const galleryParentGenEd = document.querySelector('.gallery_genEd');
-
+const galleryParentGenEdSC = document.querySelector('.gallery_genEd-sc');
 // const renderRow = document.createElement('div');
 // renderRow.classList.add('row');
 // const renderCol = document.createElement('div');
@@ -386,8 +387,14 @@ const fetchFacultyData = () => {
         if (category.lecturer) {
           renderFaculty(category.lecturer, galleryParentLecturer);
         }
+        if (category.lecturerSC) {
+          renderFaculty(category.lecturerSC, galleryParentLecturerSC);
+        }
         if (category.gened) {
           renderFaculty(category.gened, galleryParentGenEd);
+        }
+        if (category.genedSC) {
+          renderFaculty(category.genedSC, galleryParentGenEdSC);
         }
       });
     });
