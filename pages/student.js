@@ -182,3 +182,6 @@ const renderBarChart = () => {
 };
 
 renderBarChart();
+
+const backBtn = document.querySelector('.btn-back-mod');
+backBtn.textContent = 'Main Menu';

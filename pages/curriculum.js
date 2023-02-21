@@ -1,4 +1,7 @@
-var ctx = document.querySelector('#cUnitsChart').getContext('2d');
+const backBtn = document.querySelector('.btn-back-mod');
+backBtn.textContent = 'Main Menu';
+
+const ctx = document.querySelector('#cUnitsChart').getContext('2d');
 
 const chartLabel = [
   'General Education / Elective',

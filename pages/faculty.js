@@ -1,3 +1,5 @@
+const backBtn = document.querySelector('.btn-back-mod');
+backBtn.textContent = 'Main Menu';
 const renderStatusChartIT = () => {
   const ctx = document.getElementById('statusChartIT').getContext('2d');
   const statusLabel = ['Permanent', 'Contractual', 'Temporary', 'Part-Timer'];
