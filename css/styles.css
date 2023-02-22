@@ -181,3 +181,7 @@ body {
   aspect-ratio: 2/1;
   object-fit: cover;
 }
+
+.modal {
+  text-align: center;
+}
