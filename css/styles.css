@@ -185,3 +185,8 @@ body {
 .modal {
   text-align: center;
 }
+
+.modal img {
+  width: 100%;
+  object-fit: fill;
+}
