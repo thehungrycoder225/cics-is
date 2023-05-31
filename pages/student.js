@@ -58,9 +58,9 @@ const chartLabel = [
   ' 2021-2022',
   ' 2022-2023',
 ];
-var ctx = document.getElementById('trendChart').getContext('2d');
+let ctx = document.getElementById('trendChart').getContext('2d');
 
-var chart = new Chart(ctx, {
+let chart = new Chart(ctx, {
   type: 'bar',
   data: {
     labels: chartLabel,

@@ -1,0 +1,228 @@
+[
+  {
+    "faculty": [
+      {
+        "title": "Will Economic Capability & Technonological Availability Affect Graduate Competencies",
+        "authors": ["Maria Ness M. Solomon", "Ivy Joy N. Aguiflor"],
+        "conference": "International Conference on Assessment in the New Normal (ICANN)",
+        "category": "International",
+        "year": "Virtual. May 25 – 27, 2022."
+      },
+      {
+        "title": "Carps? Ready to Face it? The Information Systems Students’ Readiness for F2F Classes",
+        "authors": [
+          "Beneden M. Logmao",
+          "Arben O. Ornedo",
+          "Ivy Joy N. Aguiflor"
+        ],
+        "conference": "International Conference on Assessment in the New Normal (ICANN)",
+        "category": "International",
+        "year": "Virtual. May 25 – 27, 2022."
+      },
+      {
+        "title": "Utilizing Surveillance, Trust and Democracy as an Online Pedagogy Amidst Pandemic 2021",
+        "authors": ["Lorimer L. Imperio"],
+        "conference": "18th International Conference on Technology, Knowledge & Society",
+        "category": "International",
+        "year": "National Changhua City Taiwan via Zoom"
+      },
+      {
+        "title": "Geospatial Analysis of SICS Students Readiness for Online Learning. ",
+        "authors": [
+          "Ronjie Mar L. Malinao",
+          "Julieta Q. Nabos",
+          "Christine May L. Nabos",
+          "Jayvi M. Mandalihan"
+        ],
+        "conference": "2020 IEEE 12th International Conference on Humanoid, Nanotechnology, Information Technology, Communication and Control, Environment, and Management (HNICEM).",
+        "category": "International",
+        "year": "Virtual. December 28-29, 2020"
+      },
+      {
+        "title": "Classifying Artocarpus Trees using Unmanned Aerial Vehicle and Artificial Neural Network",
+        "authors": ["Ronjie Mar L. Malinao"],
+        "conference": "10th International Conference on Humanoid, Nanotechnology, Information Technology, Communication and Control Environment and Management",
+        "year": "November 29 – December 2, 2018",
+        "category": "International"
+      },
+      {
+        "title": "Weissman Score of Lossless Compression Algorithms",
+        "authors": ["Ronjie Mar L. Malinao", "Eunice G. de Luna"],
+        "conference": "5th International Conference on Social Science and Management, Research Park, Choduji Minami-machi, Shimogyo-ku, Kyoto, Japan",
+        "year": "May 9-11, 2017",
+        "category": "International"
+      },
+      {
+        "title": "i-Grade: A Mobile Transmutation Table",
+        "authors": ["Ronjie Mar L. Malinao", "Eunice G. De Luna"],
+        "conference": "International Conference on Teaching & Learning",
+        "location": "Bangkok, Thailand",
+        "year": "November 2013",
+        "category": "International"
+      },
+      {
+        "title": "Potentials of using Unmanned Aerial Vehicle in the Philippine Farming Sector: Empirical evidence from field survey",
+        "authors": ["Ronjie Mar Malinao", "Alexander Hernandez"],
+        "conference": "St. Paul University, Tuguegarao City, Cagayan Valley",
+        "year": "October 25-27, 2018",
+        "category": "National"
+      },
+      {
+        "title": "Digitalization of Msme’s Business Processes Through Development and Implementation of Sales and Inventory Management System (Sims) Based On Production Monitoring",
+        "authors": [
+          "Julieta Q. Nabos",
+          "Art Jervin L. Magcamit",
+          "Christine May L. Nabos",
+          "Doreena Joy Borja"
+        ],
+        "conference": "8th Regional Science and Technology Conference",
+        "location": "Marinduque State College, Tanza, Boac, Marinduque",
+        "year": "December 19, 2022",
+        "category": "Regional"
+      },
+      {
+        "title": "Future Energy: Analysis of Weather Data to Forecast Photovoltaic Solar Energy Harvest",
+        "authors": ["Eunice G. De Luna-Malinao", "Ronjie Mar Malinao"],
+        "conference": "8th Regional Science and Technology Conference",
+        "location": "Marinduque State College, Tanza, Boac, Marinduque",
+        "year": "December 19, 2022",
+        "category": "Regional"
+      },
+      {
+        "title": "QR Code Security: A Bitplane Attack Resistant Multi-Image Stenography",
+        "authors": ["Eunice G. De Luna-Malinao", "Ronjie Mar Malinao"],
+        "conference": "8th Regional Science and Technology Conference",
+        "location": "Marinduque State College, Tanza, Boac, Marinduque",
+        "year": "December 19, 2022",
+        "category": "Regional"
+      },
+      {
+        "title": "AI in Higher Education: Unveiling Faculty Perspective Towards AI through UTAUT Approach",
+        "authors": ["Ryan Clifford L. Perez"],
+        "conference": "8th Regional Science and Technology Conference",
+        "location": "Marindque, State College, Tanza, Boac, Marinduque",
+        "year": "December 19, 2022",
+        "category": "Regional"
+      },
+      {
+        "title": "Examination question classification based on revised Bloom’s Taxonomy using Naïve Bayes classifier",
+        "authors": ["Kierven A. Villaruel"],
+        "conference": "8th Regional Science and Technology Conference",
+        "location": "Marinduque State College, Tanza, Boac, Marinduque",
+        "year": "December 19, 2022",
+        "category": "Regional"
+      },
+      {
+        "title": "Hanap-Bahay App: “A Rental-House Management Application”",
+        "authors": ["Kierven A. Villaruel"],
+        "conference": "7th Regional Science and Technology Conference",
+        "location": "Marinduque State College, Tanza, Boac, Marinduque",
+        "year": "December 15, 2021",
+        "category": "Regional"
+      },
+      {
+        "title": "Perception of E-Wallets as the Mode of Payment for Online Enrolment in MSC",
+        "authors": ["Ryan Clifford L. Perez"],
+        "conference": "7th Regional Science and Technology Conference",
+        "location": "Marinduque State College, Tanza, Boac, Marinduque",
+        "year": "December 15, 2021",
+        "category": "Regional"
+      },
+      {
+        "title": "Ant Colony Optimization (ACO) for Short Route Calculation Implemented to Transport Mobile Application for Small Network Transport Services in Marinduque",
+        "authors": ["Jeffrey M. Marapia"],
+        "conference": "7th Regional Science and Technology Conference",
+        "location": "Marinduque State College, Tanza, Boac, Marinduque",
+        "year": "December 15, 2021",
+        "category": "Regional"
+      },
+      {
+        "title": "Parental Engagement on Edukasyong Pantahanan at Pangkabuhayan: ICT Skills and Availability of ICT Equipment in Children’s Learning Amidst Pandemic",
+        "authors": ["Beneden Logmao", "Christine May L. Nabos", "Arben Ornedo"],
+        "conference": "6th Regional Science and Technology Conference",
+        "location": "Marinduque State College",
+        "year": "June 29, 2021",
+        "category": "Regional"
+      },
+      {
+        "title": "TraceTech: A Graduate Tracer Study of BS Information Technology & BS Information System from 2012 to 2018",
+        "authors": [
+          "Ronjie Mar L. Malinao",
+          "Maria Nessa M. Solomon",
+          "Art Jervin L. Magcamit",
+          "Julieta Nabos"
+        ],
+        "conference": "4th Regional Science and Technology Conference",
+        "location": "Virtual",
+        "year": "Marinduque State College, Tanza, Boac, Marinduque",
+        "year": "November 2020",
+        "category": "Regional"
+      },
+      {
+        "title": "Analysis about the Difficulty Level of the Different Information Technology Tools as utilized by the selected student at the School of Information and Computing Sciences",
+        "authors": ["Lorimer L. Imperio"],
+        "conference": "4th Regional Science and Technology Conference",
+        "location": "SAED Audio-Visual Room, Tanza, Boac, Marinduque",
+        "year": "November 11, 2020",
+        "category": "Regional"
+      },
+      {
+        "title": "Evaluation of Neural Network Activation Functions for Educational Dataset",
+        "authors": ["Ronjie Mar L. Malinao"],
+        "conference": "2nd Science and Technology Conference",
+        "location": "Marinduque State College Audio Visual Room, Tanza, Boac, Marinduque",
+        "year": "June 22, 2019",
+        "category": "Regional"
+      },
+      {
+        "title": "Association Rule Mining using Apriori Algorithm in Road Accident Causation Analysis",
+        "authors": ["Ryan Clifford L. Perez"],
+        "conference": "3rd Science and Technology Conference",
+        "location": "Balar Events Place, Balaring, Boac, Marinduque",
+        "year": "December 12, 2019",
+        "category": "Regional"
+      },
+      {
+        "title": "Potentials of using Drone in the Marinduque Farming Sector: Empirical evidence from field survey",
+        "authors": ["Ronjie Mar Malinao", "Alexander A. Hernandez"],
+        "conference": "1st Regional Science and Technology Conference",
+        "location": "Marinduque State College, Tanza, Boac, Marinduque",
+        "year": "September 19-21, 2018",
+        "category": "Regional"
+      },
+      {
+        "title": "Web-Based Procurement Management System of Marinduque State College-Supply Office",
+        "authors": [
+          "Reynaldo M. Lingon, Jr.",
+          "Art Jervin L. Magcamit",
+          "Maria Nessa M. Solomon"
+        ],
+        "conference": "MSC Audio-Visual Room, Marinduque State College, Tanza, Boac, Marinduque",
+        "year": "December 14-15, 2017",
+        "category": "Regional"
+      },
+      {
+        "title": "E-Vote: Electronic Voting System for Marinduque State College",
+        "authors": ["Ronjie Mar L. Malinao", "Eunice G. De Luna"],
+        "conference": "5th STIRDC Regional and Extension Conference",
+        "location": "Romblon State University, Odiongan, Romblon",
+        "year": "October 29-30, 2015",
+        "category": "Regional"
+      }
+    ],
+    "student": [
+      {
+        "title": "Student Title",
+        "authors": ["Student Author 1", "Student Author 2"],
+        "adviser": "Student Adviser",
+        "year": "Student Year"
+      },
+      {
+        "title": "Student Title",
+        "authors": ["Student Author 1", "Student Author 2"],
+        "adviser": "Student Adviser",
+        "year": "Student Year"
+      }
+    ]
+  }
+]
