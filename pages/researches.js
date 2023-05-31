@@ -69,23 +69,27 @@ const renderPieChart = () => {
 
   let options = {
     responsive: true,
+    maintainAspectRatio: true,
+    legend: { position: 'bottom' },
+    // indexAxis: 'y',
     plugins: {
       legend: {
         position: 'bottom',
+        display: false,
+      },
+      tooltip: {
+        display: false,
       },
       title: {
         display: true,
-        text: 'Researches by Category',
-      },
-      labels: {
-        display: true,
+        text: 'Researches by Presentation',
       },
     },
   };
 
   const ctx = document.getElementById('pieChart').getContext('2d');
   let myChart = new Chart(ctx, {
-    type: 'pie',
+    type: 'bar',
     data: {
       datasets: data,
       labels: data[0].labels,
