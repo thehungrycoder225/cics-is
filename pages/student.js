@@ -57,6 +57,9 @@ const chartLabel = [
   ' 2020-2021',
   ' 2021-2022',
   ' 2022-2023',
+  ' 2023-2024',
+  ' 2024-2025',
+  ' 2025-2026',
 ];
 let ctx = document.getElementById('trendChart').getContext('2d');
 
@@ -125,14 +128,21 @@ const renderBarChart = () => {
     '1st Semester ( A.Y. 2021 - 2022)',
     '2nd Semester ( A.Y. 2021 - 2022)',
     '1st Semester ( A.Y. 2022 - 2023)',
+    '2nd Semester ( A.Y. 2022 - 2023)',
+    '1st Semester ( A.Y. 2023 - 2024)',
+    '2nd Semester ( A.Y. 2023 - 2024)',
+    '1st Semester ( A.Y. 2024 - 2025)',
+    '2nd Semester ( A.Y. 2024 - 2025)',
+    '1st Semester ( A.Y. 2025 - 2026)',
+    '2nd Semester ( A.Y. 2025 - 2026)',
   ];
   const dataIT = [
     630, 649, 584, 627, 529, 538, 517, 556, 530, 563, 555, 613, 660, 686, 753,
-    782,
+    782,732,719,777,755,787,741
   ];
   const dataIS = [
     240, 250, 169, 182, 112, 120, 107, 119, 122, 124, 142, 128, 133, 142, 195,
-    155,
+    155,249,238,323,310,407,395
   ];
   chartLabels.reverse();
   dataIT.reverse();
