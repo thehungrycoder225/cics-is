@@ -88,7 +88,7 @@ let chart = new Chart(ctx, {
       },
       {
         label: 'Information Systems',
-        data: isGrowth
+        data: isGrowth,
         backgroundColor: 'rgba(251, 170, 48,0.5)',
         borderColor: 'rgba(251, 170, 48, 1)',
         borderWidth: 1,
