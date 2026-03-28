@@ -61,17 +61,22 @@ const chartLabel = [
   ' 2024-2025',
   ' 2025-2026',
 ];
+// semester enrollments (as given in pages/student.js)
+const itSem = [630, 649, 584, 627, 529, 538, 517, 556, 530, 563, 555, 613, 660, 686, 753, 782, 732, 719, 777, 755, 787, 741];
+const isSem = [240, 250, 169, 182, 112, 120, 107, 119, 122, 124, 142, 128, 133, 142, 195, 155, 249, 238, 323, 310, 407, 395];
 
-const itEnroll = [630, 649, 584, 627, 529, 538, 517, 556, 530, 563, 555, 613, 660, 686, 753, 782, 732, 719, 777, 755, 787, 741];
-const isEnroll = [240, 250, 169, 182, 112, 120, 107, 119, 122, 124, 142, 128, 133, 142, 195, 155, 249, 238, 323, 310, 407, 395];
+// accumulate per AY (pair sem1+sem2)
+const itAY = [];
+const isAY = [];
+const totalAY = [];
 
-const totalEnroll = itEnroll.map((v, i) => v + isEnroll[i]);
-
-// growth per semester = current semester - previous semester
-// (first value has no previous baseline, set to 0; change to null if you prefer)
-const itGrowth = itEnroll.map((v, i) => (i === 0 ? 0 : v - itEnroll[i - 1]));
-const isGrowth = isEnroll.map((v, i) => (i === 0 ? 0 : v - isEnroll[i - 1]));
-const totalGrowth = totalEnroll.map((v, i) => (i === 0 ? 0 : v - totalEnroll[i - 1]));
+for (let i = 0; i < itSem.length; i += 2) {
+  const it = itSem[i] + itSem[i + 1];
+  const is = isSem[i] + isSem[i + 1];
+  itAY.push(it);
+  isAY.push(is);
+  totalAY.push(it + is);
+}
 let ctx = document.getElementById('trendChart').getContext('2d');
 
 let chart = new Chart(ctx, {
@@ -81,21 +86,21 @@ let chart = new Chart(ctx, {
     datasets: [
       {
         label: 'Information Technology',
-        data: itGrowth,
+        data: itAY,
         backgroundColor: 'rgba(26, 166, 5, 0.5)',
         borderColor: 'rgba(26, 166, 5, 1)',
         borderWidth: 1,
       },
       {
         label: 'Information Systems',
-        data: isGrowth,
+        data: isAY,
         backgroundColor: 'rgba(251, 170, 48,0.5)',
         borderColor: 'rgba(251, 170, 48, 1)',
         borderWidth: 1,
       },
       {
         label: 'Total',
-        data:  totalGrowth,
+        data:  totalAY,
         type: 'line',
         backgroundColor: 'rgba(91, 0, 0, 0.5)',
         borderColor: 'rgba(91, 0, 0, 0.5)',
