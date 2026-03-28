@@ -70,21 +70,21 @@ let chart = new Chart(ctx, {
     datasets: [
       {
         label: 'Information Technology',
-        data: [1279, 1211, 1067, 1073, 1093, 1168, 1346, 1535],
+        data: [19, 43, 9, 39, 33, 58, 26, 29, -13, -22, -46];
         backgroundColor: 'rgba(26, 166, 5, 0.5)',
         borderColor: 'rgba(26, 166, 5, 1)',
         borderWidth: 1,
       },
       {
         label: 'Information Systems',
-        data: [490, 351, 232, 226, 246, 270, 275, 350],
+        data: [10, 13, 8, 12, 2, -14, 9, -40, -11, -13, -12];
         backgroundColor: 'rgba(251, 170, 48,0.5)',
         borderColor: 'rgba(251, 170, 48, 1)',
         borderWidth: 1,
       },
       {
         label: 'Total',
-        data: [1769, 1562, 1299, 1299, 1339, 1438, 1621, 1885],
+        data:  [29, 56, 17, 51, 35, 44, 35, -11, -24, -35, -58];
         type: 'line',
         backgroundColor: 'rgba(91, 0, 0, 0.5)',
         borderColor: 'rgba(91, 0, 0, 0.5)',
