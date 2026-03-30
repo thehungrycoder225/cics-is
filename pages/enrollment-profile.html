@@ -56,50 +56,15 @@
               style="text-align: center"
             >
               <thead>
-              <tr class="text-muted">
-      <th>Academic Year</th>
-      <th class="text-green">IT</th>
-      <th class="text-warning">IS</th>
-    </tr>
-  </thead>
+  <tr class="text-muted">
+    <th>Academic Year</th>
+    <th class="text-green">IT</th>
+    <th class="text-warning">IS</th>
+    <th class="text-primary">TOTAL</th>
+  </tr>
+</thead>
 
-  <tbody class="fw-semibold">
-    <tr>
-      <td>2019-2020</td>
-      <td>86</td>
-      <td>17</td>
-    </tr>
-       <tr>
-      <td>2020-2021</td>
-      <td>1</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>2021-2022</td>
-      <td>123</td>
-      <td>33</td>
-    </tr>
-    <tr>
-      <td>2022-2023</td>
-      <td>175</td>
-      <td>29</td>
-    </tr>
-    <tr>
-      <td>2023-2024</td>
-      <td>125</td>
-      <td>19</td>
-    </tr>
-    <tr>
-      <td>2024-2025</td>
-      <td>157</td>
-      <td>36</td>
-    </tr>
-    <tr class="table-active fw-bold">
-      <td>TOTAL</td>
-      <td>666</td>
-      <td>136</td>
-    </tr>
-  </tbody>
+<tbody id="enrollmentByProgramBody" class="fw-semibold"></tbody>
             </table>
           </div>
          </div>
@@ -162,5 +127,83 @@
     crossorigin="anonymous"
   ></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="student.js"></script>
+  <script>
+  // Academic Year labels
+  const chartLabelAY = [
+    "2015-2016",
+    "2016-2017",
+    "2017-2018",
+    "2018-2019",
+    "2019-2020",
+    "2020-2021",
+    "2021-2022",
+    "2022-2023",
+    "2023-2024",
+    "2024-2025",
+    "2025-2026",
+  ];
+
+  // Semester enrollments
+  const itSem = [630, 649, 584, 627, 529, 538, 517, 556, 530, 563, 555, 613, 660, 686, 753, 782, 732, 719, 777, 755, 787, 741];
+  const isSem = [240, 250, 169, 182, 112, 120, 107, 119, 122, 124, 142, 128, 133, 142, 195, 155, 249, 238, 323, 310, 407, 395];
+
+  // Compute per Academic Year totals (Sem1 + Sem2)
+  const itAY = [];
+  const isAY = [];
+  const totalAY = [];
+
+  for (let i = 0; i < itSem.length; i += 2) {
+    const it = itSem[i] + itSem[i + 1];
+    const is = isSem[i] + isSem[i + 1];
+    itAY.push(it);
+    isAY.push(is);
+    totalAY.push(it + is);
+  }
+
+  function renderEnrollmentByProgramTable() {
+    const tbody = document.getElementById("enrollmentByProgramBody");
+    if (!tbody) return;
+
+    // Safety check: AY labels must match computed AY counts
+    const n = Math.min(chartLabelAY.length, itAY.length, isAY.length, totalAY.length);
+
+    let grandIT = 0;
+    let grandIS = 0;
+    let grandTotal = 0;
+
+    tbody.innerHTML = "";
+
+    for (let i = 0; i < n; i++) {
+      const it = itAY[i];
+      const is = isAY[i];
+      const total = totalAY[i];
+
+      grandIT += it;
+      grandIS += is;
+      grandTotal += total;
+
+      const tr = document.createElement("tr");
+      tr.innerHTML = `
+        <td>${chartLabelAY[i]}</td>
+        <td>${it}</td>
+        <td>${is}</td>
+        <td>${total}</td>
+      `;
+      tbody.appendChild(tr);
+    }
+
+    const totalRow = document.createElement("tr");
+    totalRow.className = "table-active fw-bold";
+    totalRow.innerHTML = `
+      <td>TOTAL</td>
+      <td>${grandIT}</td>
+      <td>${grandIS}</td>
+      <td>${grandTotal}</td>
+    `;
+    tbody.appendChild(totalRow);
+  }
+
+  document.addEventListener("DOMContentLoaded", renderEnrollmentByProgramTable);
+</script>
+ 
 </html>
