@@ -205,5 +205,113 @@
 
   document.addEventListener("DOMContentLoaded", renderEnrollmentByProgramTable);
 </script>
+  <script>
+    <script>
+  // --- TREND CHART (Enrollment by Academic Year) ---
+  const trendCanvas = document.getElementById("trendChart");
+  if (trendCanvas) {
+    const ctxTrend = trendCanvas.getContext("2d");
+
+    new Chart(ctxTrend, {
+      type: "bar",
+      data: {
+        labels: chartLabelAY, // IMPORTANT: use chartLabelAY (your AY labels)
+        datasets: [
+          {
+            label: "Information Technology",
+            data: itAY,
+            backgroundColor: "rgba(26, 166, 5, 0.5)",
+            borderColor: "rgba(26, 166, 5, 1)",
+            borderWidth: 1,
+          },
+          {
+            label: "Information Systems",
+            data: isAY,
+            backgroundColor: "rgba(251, 170, 48, 0.5)",
+            borderColor: "rgba(251, 170, 48, 1)",
+            borderWidth: 1,
+          },
+          {
+            label: "Total",
+            data: totalAY,
+            type: "line",
+            backgroundColor: "rgba(91, 0, 0, 0.5)",
+            borderColor: "rgba(91, 0, 0, 0.5)",
+            borderWidth: 2,
+          },
+        ],
+      },
+      options: {
+        scales: {
+          x: { stacked: true, beginAtZero: true },
+          y: { stacked: true, beginAtZero: true },
+        },
+      },
+    });
+  }
+
+  // --- SEMESTER CHART (Enrollment by Semester) ---
+  function renderSemChart() {
+    const semCanvas = document.getElementById("semChart");
+    if (!semCanvas) return;
+
+    const ctxSem = semCanvas.getContext("2d");
+
+    // Build labels from AY labels (2 labels per AY) so you don't hardcode them
+    const semLabels = [];
+    for (const ay of chartLabelAY) {
+      semLabels.push(`1st Semester ( A.Y. ${ay})`);
+      semLabels.push(`2nd Semester ( A.Y. ${ay})`);
+    }
+
+    // Clone so we don't mutate originals when reversing
+    const labels = [...semLabels].reverse();
+    const dataIT = [...itSem].reverse();
+    const dataIS = [...isSem].reverse();
+
+    new Chart(ctxSem, {
+      type: "bar",
+      data: {
+        labels,
+        datasets: [
+          {
+            label: "Information Technology",
+            backgroundColor: "rgba(26, 166, 5, 0.5)",
+            borderColor: "rgba(26, 166, 5, 1)",
+            borderWidth: 1,
+            data: dataIT,
+          },
+          {
+            label: "Information Systems",
+            backgroundColor: "rgba(251, 170, 48, 0.5)",
+            borderColor: "rgba(251, 170, 48, 1)",
+            borderWidth: 1,
+            data: dataIS,
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        indexAxis: "y",
+        plugins: {
+          legend: { position: "bottom" },
+          tooltip: { enabled: true },
+        },
+        scales: {
+          x: { stacked: true },
+          y: { stacked: true },
+        },
+      },
+    });
+  }
+
+  renderSemChart();
+
+  // --- BACK BUTTON TEXT ---
+  const backBtn = document.querySelector(".btn-back-mod");
+  if (backBtn) backBtn.textContent = "Main Menu";
+</script>
+  </script>
  
 </html>
