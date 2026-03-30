@@ -57,8 +57,8 @@ const chartLabel = [
   ' 2024-2025',
 ];
 // semester enrollments (as given in pages/student.js)
-const itAY = [86, 123, 175, 125, 157];
-const isAY = [17, 33, 29, 19, 36];
+const itAY = [86,1, 123, 175, 125, 157];
+const isAY = [17,2, 33, 29, 19, 36];
 const totalAY = itAY.map((v, i) => v + isAY[i]);
 // accumulate per AY (pair sem1+sem2)
 
